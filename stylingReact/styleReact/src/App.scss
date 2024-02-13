@@ -1,0 +1,9 @@
+@import url("./assets/style/scss/partials/_button.scss");
+@import url("./_variables.scss");
+
+h1{
+  color: $primary-color;
+  span{
+    color: lightcoral;
+  }
+}
