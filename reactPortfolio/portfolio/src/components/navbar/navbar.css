@@ -1,0 +1,58 @@
+#navbar {
+  background: #1a1a1a !important;
+}
+#navbar .navBrand {
+  color: white;
+}
+#navbar .navLink {
+  color: white;
+  font-weight: 500;
+  margin-left: 30px;
+}
+
+#navbar .navLink {
+  display: inline-block;
+  position: relative;
+}
+
+#navbar #navLinkUnderline::before {
+    content: "";
+    position: absolute;
+    width: 40%;
+    height: 2px;
+    bottom: 0;
+    left: 30%;
+    background-color: white;
+    transform-origin: bottom center;
+}
+
+#navbar .navLink::after {
+  content: "";
+  position: absolute;
+  width: 40%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 30%;
+  background-color: white;
+  transform-origin: bottom center;
+  transition: transform 0.25s ease-out;
+}
+
+#navbar .navLink:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom center;
+}
+
+#navbar .navText {
+  color: white;
+  font-weight: 500;
+}
+#navbar .navText button {
+  border-radius: 22px;
+  background: white;
+  color: #1a1a1a;
+  font-weight: bold;
+  border: none;
+  margin-left: 10px;
+}
